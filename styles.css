@@ -6,62 +6,140 @@
 nav{
     display: flex;
     justify-content: space-between;
-    background-color: rgb(155, 218, 78);
+    /*border: 1px solid red;*/
+    padding: 10px;
+    font-weight: bold;
+    background-color: #757474;
     height: 90px;
+    font-size: 20px;
     align-items: center;
-    padding: 0 5rem;
-    
-    & .logo{
-        & a{
-            color: blanchedalmond;
-            text-decoration: none;
-            font-size: 3rem;
-        }
-    }
+    padding: 0 3rem;
 
-    & ul.menu{
-        display: flex;
-        list-style: none;
-
-        & li{
-            margin: 0 1rem;
-            & a{
-                color: azure;
-                text-decoration: none;
-            }
-        }
-    }
-    @media screen and (max-width: 450px) {
+    @media screen and (max-width: 450px){
         flex-direction: column;
         height: auto;
-        padding: 3rem 0;
-
-        & .menu{
-            margin-top: 2rem;
-            flex-direction: column;
-            align-items: center;
-        }
-    }
-}
-.banner{
-    height: 1000px;
-    background-image: url("https://f.ptcdn.info/854/080/000/rw4gh72gk4sgY5hl8tSlM-o.jpg");
-    background-position: center;
-    background-size: cover;
-    color: blueviolet;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-
-    & .welcome-img{
-        height: 400px;
-        width: 300px;
-        background-position: center;
-        background-size: cover;
+        font-size: 15px;
+        padding-bottom: 1rem;
         
     }
 }
-footer{
     
+& .logo{
+    & img{
+        height: 80px;
+        width: 130px;
+        background-position: center;
+        background-size: cover;
+        }
 }
+
+
+.menu{
+        display: flex;
+        list-style: none;
+}
+
+.menu li{
+    margin: 0 1rem;
+    & a{
+    color: azure;
+    text-decoration: none;
+    }
+}
+
+
+
+.banner{
+    height: 800px;
+    background-image: url("https://www.kmutnb.ac.th/getattachment/life-in-the-university/bangkok/g.jpg.aspx");
+    background-position: center;
+    background-size: cover;
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center;
+    text-align: center;
+
+    @media screen and (max-width: 450px){
+        flex-direction: column;
+        height: auto;
+        font-size: 15px;
+        padding-bottom: 1rem;
+        
+    }
+}
+
+.banner-text img{
+        height: 300px;
+        width: 300px;
+        border-radius: 100%;
+        background-position: center;
+        background-size: cover;
+}
+    
+
+.banner-text{
+        margin-top: 2rem;
+        flex-direction: column;
+        align-items: center;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: antiquewhite;
+    
+    @media screen and (max-width: 450px){
+        flex-direction: column;
+        height: auto;
+        font-size: 15px;
+        padding-bottom: 1rem;
+        
+    }
+}
+
+main img{
+    width: 100%;
+    border-radius: 20px;
+    width: 200px;
+   
+
+}
+
+main div{
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+main div p{
+    margin-top: 10px;
+}
+    
+footer{
+
+        display: flex;
+        justify-content: space-between;
+        background-color: #333;
+        height: 90px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0 5rem;
+        font-size: 10px;
+
+        @media screen and (max-width: 450px){
+            flex-direction: column;
+            height: auto;
+            font-size: 15px;
+            padding-bottom: 1rem;
+            
+     }
+ }
+
+
