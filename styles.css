@@ -15,7 +15,7 @@ nav{
     align-items: center;
     padding: 0 3rem;
 
-    @media screen and (max-width: 700px){
+    @media screen and (max-width: 450px){
         flex-direction: column;
         height: auto;
         font-size: 15px;
@@ -62,7 +62,7 @@ nav{
     justify-content: center;
     text-align: center;
 
-    @media screen and (max-width: 700px){
+    @media screen and (max-width: 450px){
         flex-direction: column;
         height: auto;
         font-size: 15px;
@@ -91,7 +91,7 @@ main{
     grid-template-columns: 1fr 1fr;
     background-color: antiquewhite;
     
-    @media screen and (max-width: 700px){
+    @media screen and (max-width: 450px){
         flex-direction: column;
         height: auto;
         font-size: 15px;
@@ -122,8 +122,84 @@ main div p{
 }
 
 .banner2{
-    height: 800px;
-    background-color: #36e713;
+    height: 600px;
+    background-image: url("/image/460295194_1665951254326288_6171318634269149428_n.jpg");
+    background-position: center;
+    background-size: cover;
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    @media screen and (max-width: 450px){
+        flex-direction: column;
+        height: auto;
+        font-size: 15px;
+        padding-bottom: 1rem;
+        
+    }
+}
+
+.banner2-text img{
+        height: 400px;
+        width: 300px;
+        border-radius: 20px;
+        background-position: center;
+        background-size: cover;
+}
+    
+
+.banner2-text{
+        margin-top: 2rem;
+        flex-direction: column;
+        align-items: center;
+}
+
+.blog{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: #eba951;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+        
+        @media screen and (max-width: 450px){
+            flex-direction: column;
+            height: auto;
+            font-size: 15px;
+            padding-bottom: 1rem;
+            
+    }
+}
+
+.blog img{
+    width: 100%; /* ให้ครึ่งหนึ่งของความกว้าง แต่เหลือที่ว่างสำหรับระยะห่าง */
+    margin-bottom: 10px; /* ระยะห่างระหว่างบรรทัด */
+    border-radius: 20px;
+    width: 200px;
+   
+
+}
+
+.blog div{
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.blog div p{
+    margin-top: 10px;
+}
+
+.banner3{
+    height: 600px;
+    background-image: url("/image/1112.jpg");
     background-position: center;
     background-size: cover;
     color: #000;
@@ -134,7 +210,7 @@ main div p{
     justify-content: center;
     text-align: center;
 
-    @media screen and (max-width: 700px){
+    @media screen and (max-width: 450px){
         flex-direction: column;
         height: auto;
         font-size: 15px;
@@ -143,19 +219,58 @@ main div p{
     }
 }
 
-.banner2-text img{
-        height: 300px;
+.banner3-text img{
+        height: 400px;
         width: 300px;
-        border-radius: 100%;
+        border-radius: 20px;
         background-position: center;
         background-size: cover;
 }
     
 
-.banner2-text{
+.banner3-text{
         margin-top: 2rem;
         flex-direction: column;
         align-items: center;
+}
+
+.box{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color:rgb(146, 196, 198);
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+        
+        @media screen and (max-width: 450px){
+            flex-direction: column;
+            height: auto;
+            font-size: 15px;
+            padding-bottom: 1rem;
+            
+    }
+}
+
+.box img{
+    width: 100%; /* ให้ครึ่งหนึ่งของความกว้าง แต่เหลือที่ว่างสำหรับระยะห่าง */
+    margin-bottom: 10px; /* ระยะห่างระหว่างบรรทัด */
+    border-radius: 20px;
+    width: 200px;
+   
+
+}
+
+.box div{
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.box div p{
+    margin-top: 10px;
 }
     
 footer{
@@ -170,7 +285,7 @@ footer{
         padding: 0 5rem;
         font-size: 10px;
 
-        @media screen and (max-width: 700px){
+        @media screen and (max-width: 450px){
             flex-direction: column;
             height: auto;
             font-size: 15px;
