@@ -20,6 +20,7 @@ nav{
         height: auto;
         font-size: 15px;
         padding-bottom: 1rem;
+       
         
     }
 }
@@ -30,6 +31,7 @@ nav{
         width: 130px;
         background-position: center;
         background-size: cover;
+        
         }
 }
 
@@ -96,6 +98,11 @@ main{
         height: auto;
         font-size: 15px;
         padding-bottom: 1rem;
+
+        & .main img {
+            width: 20px;
+            height: 20px;
+        }
         
     }
 }
@@ -104,9 +111,8 @@ main img{
     width: 100%;
     border-radius: 20px;
     width: 200px;
-   
-
 }
+
 
 main div{
     padding: 20px;
@@ -161,7 +167,7 @@ main div p{
 .blog{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        background-color: #eba951;
+        background-color: #f9c8e3;
         flex-wrap: wrap;
         justify-content: space-between;
         
@@ -293,5 +299,7 @@ footer{
             
      }
  }
+
+
 
 
