@@ -73,16 +73,7 @@ nav{
     text-decoration: none;
     }
 
-    @media screen and (max-width: 700px){
-        flex-direction: column;
-        height: auto;
-        font-size: 15px;
-        padding-bottom: 1rem;
-
-        font-family: Courier New;
-       
-        
-    }
+    
 }
 
 
