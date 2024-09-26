@@ -20,7 +20,7 @@ nav {
     height: auto;
     font-size: 15px;
     padding-bottom: 1rem;
-    
+
     font-family:cursive;
   }
 }
@@ -38,6 +38,15 @@ nav {
   display: flex;
   list-style: none;
   font-family: "Zapf Chancery", cursive;
+
+  @media screen and (max-width: 700px) {
+    flex-direction: column;
+    height: auto;
+    font-size: 15px;
+    padding-bottom: 1rem;
+
+    font-family:cursive;
+  }
 }
 
 .menu li {
