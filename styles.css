@@ -22,7 +22,7 @@ nav{
         font-size: 15px;
         padding-bottom: 1rem;
 
-        font-family: sans-serif;
+        font-family: Arial;
        
         
     }
@@ -78,7 +78,7 @@ nav{
         font-size: 15px;
         padding-bottom: 1rem;
 
-        font-family: sans-serif;
+        font-family: Arial;
         
     }
 }
@@ -112,7 +112,7 @@ main{
         font-size: 15px;
         padding-bottom: 1rem;
 
-        font-family: sans-serif;
+        font-family: Arial;
 
         & .main img {
             width: 20px;
@@ -164,7 +164,7 @@ main div p{
         font-size: 15px;
         padding-bottom: 1rem;
 
-        font-family: sans-serif;
+        font-family: Arial;
         
     }
 }
@@ -201,7 +201,7 @@ main div p{
             font-size: 15px;
             padding-bottom: 1rem;
 
-            font-family: sans-serif;
+            font-family: Arial;
             
     }
 }
@@ -249,7 +249,7 @@ main div p{
         font-size: 10px;
         padding-bottom: 1rem;
 
-        font-family: sans-serif;
+        font-family: Arial;
         
     }
 }
@@ -288,7 +288,7 @@ main div p{
             font-size: 15px;
             padding-bottom: 1rem;
            
-            font-family: sans-serif;
+            font-family: Arial;
             
     }
 }
@@ -340,7 +340,7 @@ footer{
             align-items: center;
             justify-content: center;
 
-            font-family: sans-serif;
+            font-family: Arial;
         
 
             
