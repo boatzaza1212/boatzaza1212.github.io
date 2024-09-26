@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML CSS Layout</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="getapi.js"></script>
+    
   </head>
   <body>
     <!-- Nav Start -->
@@ -26,13 +28,8 @@
     <!-- Nav End -->
 
     <!-- Banner Start-->
-    <section class="banner4">
-      <div class="banner4-text">
-        <img
-          class="welcome-img"
-          src="/image/Remove-bg.ai_1727196013205.png"
-          alt=""
-        />
+    <section class="api">
+      <div class="api-text">
         <h1><mark> WELCOME TO MY WEBSITE</mark></h1>
         <p>
           <mark>
@@ -45,22 +42,47 @@
     <!-- Banner End-->
 
     <!-- Main Start-->
-    <main>
-      <div id="ABOUT_ME">
+    <section class="apimethod">
+      <div id="api-get">
         <!-- Added id here -->
-        <h3>ABOUT ME</h3>
-        <img src="/image/image1.jpg" alt="" />
-        <p>HELLO EVERYBODY, I am Warunsiri Silarat</p>
-        <p>
-          I'm studying at King Mongkut's University of Technology North Bangkok.
-        </p>
-        <p>
-          Currently studying in the third year, Bachelor of Engineering, Major
-          in Instrumentation and Automation Engineering.
-        </p>
+        <h3>API Method</h3>
+        <div class="boxtable">
+          <table>
+            <tr>
+              <th class="table-th">Sensor</th>
+              <th class="table-th">Value</th>
+              <th class="table-th">Unit</th>
+            </tr>
+            <tr>
+              <td>Timestamp</td>
+              <td class="td-sensor"><div id="timestamp"></div></td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>Temp</td>
+              <td class="td-sensor"><div id="temperature"></div></td>
+              <td>°C</td>
+            </tr>
+            <tr>
+              <td>Luxsensor</td>
+              <td class="td-sensor"><div id="luxsensor"></div></td>
+              <td>Lux</td>
+            </tr>
+            <tr>
+              <td>Humidity</td>
+              <td class="td-sensor"><div id="humidity"></div></td>
+              <td>%RH</td>
+            </tr>
+            <tr>
+              <td>Motion</td>
+              <td class="td-sensor"><div id="motion"></div></td>
+              <td>-</td>
+            </tr>
+          </table>
+        </div>
       </div>
 
-      <div id="EDUCATION">
+      <div id="api-post">
         <!-- Added id here -->
         <h3>EDUCATION</h3>
         <img
@@ -86,7 +108,7 @@
 
         <p><a href="#Home">⬆️</a></p>
       </div>
-    </main>
+    </section>
     <!-- Main End-->
 
     <!-- Footer Start-->
