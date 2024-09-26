@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML CSS Layout</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="api.css" />
     <script src="getapi.js"></script>
     
   </head>
@@ -20,7 +20,8 @@
       </div>
       <ul class="menu">
         <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="api.html">API-Method</a></li>
+        <li><a href="#api-get">API-Method</a></li>
+        <li><a href="#api-post">API-Post</a></li>
         <li><a href="contact.html">Contract</a></li>
       </ul>
     </nav>
@@ -30,11 +31,10 @@
     <!-- Banner Start-->
     <section class="api">
       <div class="api-text">
-        <h1><mark> WELCOME TO MY WEBSITE</mark></h1>
+        <h1><mark> API</mark></h1>
         <p>
           <mark>
-            Mongkut's University of North Bangkok (2022-Present) - Bachelor of
-            Engineering, Major in Instrumentation and Automation
+            ย่อมาจาก Application Programming Interface เป็นช่องทางในการเชื่อมต่อเพื่อแลกเปลี่ยนข้อมูลกันระหว่างแอพพลิเคชั่น โดยการใช้งานจะแบ่งออกเป็น 3 รูปแบบ
           </mark>
         </p>
       </div>
@@ -45,7 +45,15 @@
     <section class="apimethod">
       <div id="api-get">
         <!-- Added id here -->
-        <h3>API Method</h3>
+        <h3 style="font-size:30px; margin-top: 40px; margin-bottom: 40px"><mark 
+          style="
+          background-color: #8BD2EC;
+          color: yellow;
+          margin-left: 20px;
+          margin-right: 20px;
+          border: 5px solid black;
+          border-radius: 15px;
+        ">&#160;    API Method    &#160;</mark></h3>
         <div class="boxtable">
           <table>
             <tr>
@@ -84,29 +92,35 @@
 
       <div id="api-post">
         <!-- Added id here -->
-        <h3>EDUCATION</h3>
-        <img
-          src="/image/logo_kmutnb_invention_to_innovation_2020-(2).jpg"
-          alt=""
-        />
-        <p>
-          King Mongkut's University of North Bangkok (2022-Present) - Bachelor
-          of Engineering, Major in Instrumentation and Automation Engineering
-          (GPA: -)
-        </p>
-        <img src="/image/unnamed.png" alt="" />
-        <p>
-          Saraburi Technical College (2019-2021) - Diploma of Vocational
-          Education, Major in Electrical: Field of Specialization Electrical
-          Control Devices (GPA: 3.75)
-        </p>
-        <img src="/image/Remove-bg.ai_1727199554280.png" alt="" />
-        <p>
-          Saohai Wimolwitthayanukul School (2014-2017) - High School, Science
-          and Mathematics Program (GPA: 2.19)
-        </p>
+        <h3 style="font-size:30px; margin-top: 40px; margin-bottom: 40px"><mark 
+          style="
+          background-color: #8BD2EC;
+          color: yellow;
+          margin-left: 20px;
+          margin-right: 20px;
+          border: 5px solid black;
+          border-radius: 15px;
+        ">&#160;    API Post    &#160;</mark></h3>
+        <div class="api-post">
+            <form onsubmit="event.preventDefault(); submitData();">
+                <div class="api-post-box-name">
+                    <p class="text-titleonbox" >NAME</p>
+                    <input class="box-input-text" type="text" id="studentId" required placeholder="Enter StudentID">
+                </div>
+                <div class="api-post-box-id">
+                    <p class="text-titleonbox" >ID</p>
+                    <input class="box-input-text" type="text" id="studentName" required placeholder="Enter name">
+                </div>
+                <div class="api-post-box-sent">
+                    <input class="api-post-box-sent-submit" type="submit" >
+                </div>
+            </div>
+            </form>
+        </div>
+        <script src="post.js"></script>
+        </div>
 
-        <p><a href="#Home">⬆️</a></p>
+        <p style="text-align: center; margin-bottom:20px"><a href="#Home">⬆️</a></p>
       </div>
     </section>
     <!-- Main End-->
