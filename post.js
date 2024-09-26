@@ -20,7 +20,7 @@ async function submitData() {
         });
 
         if (response.ok) {
-            alert("ส่งไปแล้วจู้");
+            alert("ได้รับแล้วจั๊ฟผม");
         } else {
             alert("ส่งบ่ได้เด้ออออ!!!");
         }
