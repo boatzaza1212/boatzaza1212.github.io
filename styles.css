@@ -26,7 +26,10 @@ nav{
         height: auto;
         font-size: 15px;
         padding-bottom: 1rem;
- 
+
+        font-family: Courier New;
+       
+        
     }
 }
 
@@ -45,9 +48,11 @@ nav{
 .menu{
         display: flex;
         list-style: none;
-        font-family: Courier New;
+        font-family: cursive;
+
         
 
+        
 }
 
 .menu li{
@@ -56,8 +61,6 @@ nav{
     color: azure;
     text-decoration: none;
     }
-
-    
 }
 
 
