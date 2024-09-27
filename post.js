@@ -20,12 +20,12 @@ async function submitData() {
       });
 
       if (response.ok) {
-          alert("Successfully");
+          alert("ส่งมาถึงแล้วจั๊ฟพรี่");
       } else {
-          alert("!ERROR!");
+          alert("!ยังไม่ได้รับเลยจั๊ฟพรี่!");
       }
   } catch (error) {
       console.error("Error:", error);
-      alert("!ERROR!");
+      alert("!ยังไม่ได้รับเลยจั๊ฟพรี่!");
   }
 }
