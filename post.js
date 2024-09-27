@@ -11,7 +11,7 @@ async function submitData() {
 
     // ส่งข้อมูลไปยัง API โดยใช้ fetch
     try {
-        const response = await fetch("http://206.189.146.138/api/students", {
+        const response = await fetch("https://206.189.146.138/api/students?fbclid=IwY2xjawFjSItleHRuA2FlbQIxMAABHZaRS60V-dJg96FfbYfCYJ2HhYkTb9bf17ofb_3xGApZoy9fIVcILJx1_w_aem_UTX6ZfNqqiDJ1eMty-u7Hw", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
