@@ -48,7 +48,7 @@ nav{
 .menu{
         display: flex;
         list-style: none;
-        font-family: cursive;
+        font-family: Courier New;
 
         
 
@@ -79,7 +79,7 @@ nav{
     /*align-items: center;*/
     justify-content: center;
     text-align: center;
-    font-family: cursive;
+    font-family: Courier New;
 
     @media screen and (max-width: 700px){
         flex-direction: column;
@@ -113,7 +113,7 @@ main{
     background-color: antiquewhite;
     border-radius: 15px;
     border: 5px solid black;
-    font-family: cursive;
+    font-family: Courier New;
     
     @media screen and (max-width: 700px){
         display: grid;
@@ -209,7 +209,7 @@ main div p{
         justify-content: space-between;
         border-radius: 15px;
         border: 5px solid black;
-        font-family: cursive;
+        font-family: Courier New;
 
         
         
@@ -263,7 +263,7 @@ main div p{
     text-align: center;
     border-radius: 15px;
     border: 5px solid black;
-    font-family: cursive;
+    font-family: Courier New;
 
     @media screen and (max-width: 700px){
         flex-direction: column;
@@ -282,7 +282,7 @@ main div p{
         border-radius: 20px;
         background-position: center;
         background-size: cover;
-        font-family: cursive;
+        font-family: Courier New;
 
 }
     
@@ -301,7 +301,7 @@ main div p{
         border: 5px solid black;
         flex-wrap: wrap;
         justify-content: space-between;
-        font-family: cursive;
+        font-family: Courier New;
         
         
         @media screen and (max-width: 700px){
@@ -356,7 +356,7 @@ footer{
         border-radius: 15px;
         border: 5px solid black;
         
-        font-family: cursive;
+        font-family: Courier New;
         
         
     

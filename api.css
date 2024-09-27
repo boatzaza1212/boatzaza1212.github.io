@@ -47,7 +47,7 @@ nav{
 .menu{
         display: flex;
         list-style: none;
-        font-family: cursive;
+        font-family: Courier New;
 
         
 
@@ -78,7 +78,7 @@ nav{
         /*align-items: center;*/
         justify-content: center;
         text-align: center;
-        font-family: cursive;
+        font-family: Courier New;
     
         @media screen and (max-width: 700px){
             flex-direction: column;
@@ -112,7 +112,7 @@ nav{
         background-color: #DFE1BE;
         border-radius: 15px;
         border: 5px solid black;
-        font-family: cursive;
+        font-family: Courier New;
         
         @media screen and (max-width: 700px){
             display: grid;
@@ -208,7 +208,7 @@ footer{
         border-radius: 15px;
         border: 5px solid black;
         
-        font-family: cursive;
+        font-family: Courier New;
         
         
     
