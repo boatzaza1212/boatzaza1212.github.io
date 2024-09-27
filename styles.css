@@ -27,7 +27,7 @@ nav{
         font-size: 15px;
         padding-bottom: 1rem;
 
-        font-family: Courier New;
+        font-family: cursive;
        
         
     }
@@ -48,7 +48,7 @@ nav{
 .menu{
         display: flex;
         list-style: none;
-        font-family: Courier New;
+        font-family: cursive;
 
         
 
