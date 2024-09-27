@@ -1,40 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- ระบุว่าเป็นเอกสาร HTML และกำหนดภาษาเป็นภาษาอังกฤษ -->
   <head>
     <meta charset="UTF-8" />
+    <!-- กำหนด character encoding เป็น UTF-8 เพื่อรองรับการแสดงผลภาษาได้หลายแบบ -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- กำหนด viewport สำหรับการแสดงผลในอุปกรณ์มือถือ -->
     <title>Warunsiri Silarat</title>
+    <!-- ชื่อแท็บของเว็บไซต์ -->
     <link rel="stylesheet" href="api.css" />
-   
-    
+    <!-- ลิงก์ไปยังไฟล์ CSS เพื่อจัดรูปแบบการแสดงผลของหน้าเว็บ -->
   </head>
   <body>
     <!-- Nav Start -->
     <div id="Home"></div>
-
+    <!-- Div เพื่อใช้เป็น anchor ของการเลื่อนไปยังด้านบนสุดของหน้า -->
     <nav>
       <div class="logo">
         <a href="index.html">
           <img src="/image1/Logo_ENG_small-600x358.png" alt="" />
+          <!-- แสดงโลโก้ของเว็บเป็นลิงก์ไปยังหน้าแรก -->
         </a>
       </div>
       <ul class="menu">
         <li><a href="portfolio.html">Portfolio</a></li>
+        <!-- ลิงก์ไปยังหน้า Portfolio -->
         <li><a href="#api-get">API-Method</a></li>
+        <!-- ลิงก์ไปยังส่วน API-Method โดยใช้ anchor -->
         <li><a href="#api-post">API-Post</a></li>
+        <!-- ลิงก์ไปยังส่วน API-Post โดยใช้ anchor -->
         <li><a href="contact.html">Contract</a></li>
+        <!-- ลิงก์ไปยังหน้า Contact -->
       </ul>
     </nav>
-
     <!-- Nav End -->
 
     <!-- Banner Start-->
     <section class="api">
       <div class="api-text">
         <h1><mark> API</mark></h1>
+        <!-- หัวข้อหลักแสดงคำว่า API -->
         <p>
           <mark>
-            ย่อมาจาก Application Programming Interface เป็นช่องทางในการเชื่อมต่อเพื่อแลกเปลี่ยนข้อมูลกันระหว่างแอพพลิเคชั่น โดยการใช้งานจะแบ่งออกเป็น 3 รูปแบบ
+            ย่อมาจาก Application Programming Interface
+            เป็นช่องทางในการเชื่อมต่อเพื่อแลกเปลี่ยนข้อมูลกันระหว่างแอพพลิเคชั่น
+            โดยการใช้งานจะแบ่งออกเป็น 3 รูปแบบ
+            <!-- คำอธิบายเกี่ยวกับ API -->
           </mark>
         </p>
       </div>
@@ -44,97 +55,140 @@
     <!-- Main Start-->
     <section class="apimethod">
       <div id="api-get">
-        <!-- Added id here -->
-        <h3 style="font-size:30px; margin-top: 40px; margin-bottom: 40px"><mark 
-          style="
-          background-color: #8BD2EC;
-          color: yellow;
-          margin-left: 20px;
-          margin-right: 20px;
-          border: 5px solid black;
-          border-radius: 15px;
-        ">&#160;    API Method    &#160;</mark></h3>
+        <!-- Section สำหรับ API Method ที่ถูกระบุด้วย id -->
+        <h3 style="font-size: 30px; margin-top: 40px; margin-bottom: 40px">
+          <mark
+            style="
+              background-color: #8bd2ec;
+              color: yellow;
+              margin-left: 20px;
+              margin-right: 20px;
+              border: 5px solid black;
+              border-radius: 15px;
+            "
+            >&#160; API Method &#160;</mark
+          >
+        </h3>
+        <!-- หัวข้อ API Method พร้อมตกแต่ง style -->
         <div class="boxtable">
           <table>
+            <!-- เริ่มต้นตาราง -->
             <script src="api.js"></script>
+            <!-- ลิงก์ไปยังไฟล์ JavaScript เพื่อดึงข้อมูล API -->
             <tr>
               <th class="table-th">Sensor</th>
               <th class="table-th">Value</th>
               <th class="table-th">Unit</th>
             </tr>
+            <!-- หัวของตารางที่แสดงข้อมูล Sensor -->
             <tr>
               <td>Timestamp</td>
               <td class="td-sensor"><div id="timestamp"></div></td>
               <td>None</td>
             </tr>
+            <!-- แถวสำหรับแสดงเวลา -->
             <tr>
               <td>Temp</td>
               <td class="td-sensor"><div id="temperature"></div></td>
               <td>°C</td>
             </tr>
+            <!-- แถวสำหรับแสดงอุณหภูมิ -->
             <tr>
               <td>Luxsensor</td>
               <td class="td-sensor"><div id="luxsensor"></div></td>
               <td>Lux</td>
             </tr>
+            <!-- แถวสำหรับแสดงข้อมูลแสง -->
             <tr>
               <td>Humidity</td>
               <td class="td-sensor"><div id="humidity"></div></td>
               <td>%RH</td>
             </tr>
+            <!-- แถวสำหรับแสดงความชื้น -->
             <tr>
               <td>Motion</td>
               <td class="td-sensor"><div id="motion"></div></td>
               <td>-</td>
             </tr>
+            <!-- แถวสำหรับแสดงการเคลื่อนไหว -->
           </table>
         </div>
       </div>
 
       <div id="api-post">
-        <!-- Added id here -->
-        <h3 style="font-size:30px; margin-top: 40px; margin-bottom: 40px"><mark 
-          style="
-          background-color: #8BD2EC;
-          color: yellow;
-          margin-left: 20px;
-          margin-right: 20px;
-          border: 5px solid black;
-          border-radius: 15px;
-        ">&#160;    API Post    &#160;</mark></h3>
+        <!-- Section สำหรับ API Post ที่ถูกระบุด้วย id -->
+        <h3 style="font-size: 30px; margin-top: 40px; margin-bottom: 40px">
+          <mark
+            style="
+              background-color: #8bd2ec;
+              color: yellow;
+              margin-left: 20px;
+              margin-right: 20px;
+              border: 5px solid black;
+              border-radius: 15px;
+            "
+            >&#160; API Post &#160;</mark
+          >
+        </h3>
+        <!-- หัวข้อ API Post พร้อมตกแต่ง style -->
         <div class="api-post">
-            <form onsubmit="event.preventDefault(); submitData();">
-                <div class="api-post-box-name">
-                    <p class="text-titleonbox" >NAME</p>
-                    <input class="box-input-text" type="text" id="studentName" required placeholder="Enter name">
-                </div>
-                <div class="api-post-box-id">
-                    <p class="text-titleonbox" >ID</p>
-                    <input class="box-input-text" type="text" id="studentID" required placeholder="Enter studentID">
-                </div>
-                <div class="api-post-box-sent">
-                    <input class="api-post-box-sent-submit" type="submit" >
-                </div>
+          <form onsubmit="event.preventDefault(); submitData();">
+            <!-- ฟอร์มส่งข้อมูล API โดยไม่รีเฟรชหน้า -->
+            <div class="api-post-box-name">
+              <p class="text-titleonbox">NAME</p>
+              <input
+                class="box-input-text"
+                type="text"
+                id="studentName"
+                required
+                placeholder="Enter name"
+              />
+              <!-- ช่องกรอกชื่อ -->
             </div>
-            </form>
+            <div class="api-post-box-id">
+              <p class="text-titleonbox">ID</p>
+              <input
+                class="box-input-text"
+                type="text"
+                id="studentID"
+                required
+                placeholder="Enter studentID"
+              />
+              <!-- ช่องกรอก ID -->
+            </div>
+            <div class="api-post-box-sent">
+              <input class="api-post-box-sent-submit" type="submit" />
+              <!-- ปุ่มส่งข้อมูล -->
+            </div>
+          </form>
         </div>
         <script src="post.js"></script>
-        </div>
-
-        <p style="text-align: center; margin-bottom:20px"><a href="#Home">⬆️</a></p>
-
-        <img
-          src="/image1/wingman-wiggle-spray_valorant_gif_80157.gif"
-          alt=""
-          style="width: 200px; height: auto; margin-top: 40px; margin-bottom: 10px; margin:0 70px;"
-        />
+        <!-- ลิงก์ไปยังไฟล์ JavaScript ที่ใช้ส่งข้อมูลผ่าน API POST -->
       </div>
+
+      <p style="text-align: center; margin-bottom: 20px">
+        <a href="#Home">⬆️</a>
+      </p>
+      <!-- ลิงก์เลื่อนกลับไปที่ด้านบนของหน้า -->
+      <img
+        src="/image1/wingman-wiggle-spray_valorant_gif_80157.gif"
+        alt=""
+        style="
+          width: 200px;
+          height: auto;
+          margin-top: 40px;
+          margin-bottom: 10px;
+          margin: 0 70px;
+        "
+      />
+      <!-- แสดงภาพ GIF พร้อมกำหนด style -->
     </section>
     <!-- Main End-->
 
     <!-- Footer Start-->
     <footer>
       <h1>Copyright 2024. 💕Made by Boat 🚤</h1>
+      <!-- ส่วนท้ายของหน้าเว็บ -->
     </footer>
     <!-- Footer End-->
   </body>

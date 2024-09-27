@@ -1,194 +1,192 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin: 0; /* ตั้งค่า margin ทุกส่วนในเอกสารเป็น 0 */
+  padding: 0; /* ตั้งค่า padding ทุกส่วนในเอกสารเป็น 0 */
+  box-sizing: border-box; /* ให้รวมขอบและ padding เข้าในขนาดของ element */
 }
+
 body {
-  background-color: #000;
+  background-color: #000; /* ตั้งสีพื้นหลังของหน้าเป็นสีดำ */
 }
+
 nav {
-  display: flex;
-  justify-content: space-between;
-  /*border: 1px solid red;*/
-  padding: 10px;
-  font-weight: bold;
-  border-radius: 15px;
-  border: 5px solid black;
-  background-color: #757474;
-  height: 90px;
-  font-size: 20px;
-  align-items: center;
-  padding: 0 3rem;
+  display: flex; /* จัด layout ภายใน nav เป็นแบบ flexbox */
+  justify-content: space-between; /* จัดการวาง content ภายใน nav ให้กระจายซ้าย-ขวา */
+  /*border: 1px solid red;*/ /* คอมเมนต์เอาไว้ เป็นขอบสีแดงไว้ทดสอบ layout */
+  padding: 10px; /* ตั้งค่า padding รอบๆ ภายใน nav */
+  font-weight: bold; /* ตั้งตัวอักษรใน nav ให้หนา */
+  border-radius: 15px; /* ทำให้ขอบของ nav โค้ง */
+  border: 5px solid black; /* ตั้งขอบสีดำขนาด 5px */
+  background-color: #757474; /* ตั้งพื้นหลัง nav เป็นสีเทา */
+  height: 90px; /* กำหนดความสูงของ nav */
+  font-size: 20px; /* กำหนดขนาดตัวอักษร */
+  align-items: center; /* จัด content แนวตั้งให้อยู่ตรงกลาง */
+  padding: 0 3rem; /* เพิ่ม padding ด้านซ้าย-ขวา */
 
   @media screen and (max-width: 700px) {
-    flex-direction: column;
-    height: auto;
-    font-weight: 1000;
-    font-size: 11px;
-    padding-bottom: 1rem;
+    /* สำหรับหน้าจอขนาดเล็กกว่า 700px */
+    flex-direction: column; /* จัด content ในแนวตั้ง */
+    height: auto; /* ให้ nav ปรับความสูงตาม content */
+    font-weight: 1000; /* ตั้งตัวอักษรให้หนามากขึ้น */
+    font-size: 11px; /* ลดขนาดตัวอักษร */
+    padding-bottom: 1rem; /* เพิ่ม padding ด้านล่าง */
 
-    font-family: cursive;
+    font-family: cursive; /* เปลี่ยนฟอนต์ */
   }
 }
 
 & .logo {
   & img {
-    height: 80px;
-    width: 130px;
-    background-position: center;
-    background-size: cover;
+    height: 80px; /* ตั้งความสูงของภาพโลโก้ */
+    width: 130px; /* ตั้งความกว้างของภาพโลโก้ */
+    background-position: center; /* จัดภาพให้อยู่ตรงกลาง */
+    background-size: cover; /* ทำให้ภาพครอบคลุม container */
   }
 }
 
 .menu {
-  display: flex;
-  list-style: none;
-  font-family: Courier New;
+  display: flex; /* จัด layout ภายในเป็น flexbox */
+  list-style: none; /* ยกเลิกจุดหรือหมายเลขในรายการ */
+  font-family: Courier New; /* ตั้งฟอนต์ */
 }
 
 .menu li {
-  margin: 0 1rem;
+  margin: 0 1rem; /* เพิ่มช่องว่างซ้าย-ขวาของรายการ */
   & a {
-    color: azure;
-    text-decoration: none;
+    color: azure; /* ตั้งสีตัวอักษรของลิงก์เป็นสีฟ้าอ่อน */
+    text-decoration: none; /* ยกเลิกเส้นขีดใต้ลิงก์ */
   }
 }
 
 /* api start */
 .api {
-  height: 800px;
-  background-image: url("/image1/1001.jpg");
-  background-position: center;
-  background-size: cover;
-  border-radius: 15px;
-  border: 5px solid black;
-  color: #000;
-  font-weight: bold;
-  font-size: 20px;
-  display: flex;
-  /*align-items: center;*/
-  justify-content: center;
-  text-align: center;
-  font-family: Courier New;
+  height: 800px; /* ตั้งความสูงให้ section api */
+  background-image: url("/image1/1001.jpg"); /* ใส่ภาพพื้นหลัง */
+  background-position: center; /* จัดตำแหน่งภาพให้อยู่ตรงกลาง */
+  background-size: cover; /* ทำให้ภาพครอบคลุม container */
+  border-radius: 15px; /* ทำให้ขอบโค้ง */
+  border: 5px solid black; /* ตั้งขอบสีดำขนาด 5px */
+  color: #000; /* ตั้งสีตัวอักษรเป็นสีดำ */
+  font-weight: bold; /* ตั้งตัวอักษรให้หนา */
+  font-size: 20px; /* ตั้งขนาดตัวอักษร */
+  display: flex; /* จัด layout ภายในเป็น flexbox */
+  /*align-items: center;*/ /* คอมเมนต์ออกไว้ ไม่ให้จัด content แนวตั้ง */
+  justify-content: center; /* จัด content ให้อยู่กลางแนวนอน */
+  text-align: center; /* จัดตัวอักษรให้อยู่กลาง */
+  font-family: Courier New; /* ตั้งฟอนต์ */
 
   @media screen and (max-width: 700px) {
-    flex-direction: column;
-    height: auto;
-    font-size: 15px;
-    padding-bottom: 1rem;
-
-    font-family: Courier New;
+    /* สำหรับหน้าจอขนาดเล็กกว่า 700px */
+    flex-direction: column; /* จัด layout ในแนวตั้ง */
+    height: auto; /* ให้ปรับความสูงตาม content */
+    font-size: 15px; /* ลดขนาดตัวอักษร */
+    padding-bottom: 1rem; /* เพิ่ม padding ด้านล่าง */
   }
 }
 
 .api-text img {
-  height: 300px;
-  width: 300px;
-  border-radius: 100%;
-  background-position: center;
-  background-size: cover;
+  height: 300px; /* ตั้งความสูงของภาพ */
+  width: 300px; /* ตั้งความกว้างของภาพ */
+  border-radius: 100%; /* ทำให้ภาพเป็นวงกลม */
+  background-position: center; /* จัดภาพให้อยู่ตรงกลาง */
+  background-size: cover; /* ทำให้ภาพครอบคลุม container */
 }
 
 .api-text {
-  margin-top: 2rem;
-  flex-direction: column;
-  align-items: center;
+  margin-top: 2rem; /* เพิ่ม margin ด้านบน */
+  flex-direction: column; /* จัด layout ในแนวตั้ง */
+  align-items: center; /* จัด content ให้อยู่กลางแนวตั้ง */
 }
 
 .apimethod {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  background-color: #dfe1be;
-  border-radius: 15px;
-  border: 5px solid black;
-  font-family: Courier New;
+  display: grid; /* ใช้ grid layout */
+  grid-template-columns: 1fr 1fr; /* จัดให้มี 2 คอลัมน์ที่มีขนาดเท่ากัน */
+  background-color: #dfe1be; /* ตั้งสีพื้นหลัง */
+  border-radius: 15px; /* ทำให้ขอบโค้ง */
+  border: 5px solid black; /* ตั้งขอบสีดำขนาด 5px */
+  font-family: Courier New; /* ตั้งฟอนต์ */
 
   @media screen and (max-width: 700px) {
-    display: grid;
-    grid-template-columns: 1fr;
-    flex-direction: column;
-    height: auto;
-    font-size: 15px;
-    padding-bottom: 1rem;
-
-    font-family: Courier New;
-
-    & .main img {
-      width: 20px;
-      height: 20px;
-    }
+    /* สำหรับหน้าจอขนาดเล็กกว่า 700px */
+    grid-template-columns: 1fr; /* เปลี่ยนเป็น 1 คอลัมน์ */
+    height: auto; /* ให้ปรับความสูงตาม content */
+    font-size: 15px; /* ลดขนาดตัวอักษร */
+    padding-bottom: 1rem; /* เพิ่ม padding ด้านล่าง */
   }
 }
+
 .boxtable {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: flex; /* จัด layout เป็น flexbox */
+  justify-content: center; /* จัด content ให้อยู่กลางแนวนอน */
+  align-items: center; /* จัด content ให้อยู่กลางแนวตั้ง */
+  margin: auto;
 }
+
 .table,
 td {
-  border: 1px solid black;
-  background-color: #f0f4bf;
+  border: 1px solid black; /* ตั้งขอบของตารางและช่องข้อมูล */
+  background-color: #f0f4bf; /* ตั้งสีพื้นหลังของช่องข้อมูล */
 }
 
 .table,
 th {
-  border: 1px solid black;
-  background-color: #dbcde3;
+  border: 1px solid black; /* ตั้งขอบของตารางและหัวตาราง */
+  background-color: #dbcde3; /* ตั้งสีพื้นหลังของหัวตาราง */
 }
 
 .table-th {
-  font-size: 20 px;
-  padding: 10px 30px;
+  font-size: 20 px; /* ตั้งขนาดตัวอักษรของหัวตาราง */
+  padding: 10px 30px; /* ตั้งค่า padding ของหัวตาราง */
 }
 
 /* banner stop */
 
 .apimethod div {
-  padding: 20px;
-  align-items: center;
-  justify-content: center;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  padding: 10px; /* ตั้งค่า padding ภายใน div */
+  align-items: center; /* จัด content ให้อยู่กลางแนวตั้ง */
+  justify-content: center; /* จัด content ให้อยู่กลางแนวนอน */
+  text-align: center; /* จัดข้อความให้อยู่กลาง */
 }
 
 .apimethod div p {
-  margin-top: 10px;
+  margin-top: 15px; /* เพิ่ม margin ด้านบนของย่อหน้า */
 }
 
 .api-post {
-  border: 5px solid #d9e1e2;
-  border-radius: 15px;
-  margin: 50px 0;
-  padding: 10px 20px;
-  background-color: #f898a4;
+  border: 5px solid #d9e1e2; /* ตั้งขอบของ section api-post */
+  border-radius: 15px; /* ทำให้ขอบโค้ง */
+  margin: 50px 0; /* เพิ่มช่องว่างด้านบนและล่าง */
+  padding: 10px 20px; /* ตั้งค่า padding ภายใน */
+  background-color: #f898a4; /* ตั้งสีพื้นหลัง */
 }
+
 .api-post-box-name {
-  text-align: left;
+  text-align: left; /* จัดข้อความให้อยู่ชิดซ้าย */
 }
+
 .box-input-text {
-  width: 100%;
-  padding: 10px;
-  margin: 15px 0;
-  box-sizing: border-box;
-  border: none;
-  outline: none;
-  background: #cccccc;
+  width: 100%; /* ตั้งความกว้างของกล่องข้อความ */
+  padding: 10px; /* ตั้งค่า padding ภายในกล่อง */
+  margin: 15px 0; /* ตั้ง margin ด้านบนและล่าง */
+  box-sizing: border-box; /* รวม padding และ border เข้าในขนาด */
+  border: none; /* ยกเลิกขอบ */
+  outline: none; /* ยกเลิกเส้นขอบเมื่อคลิก */
+  background: #cccccc; /* ตั้งสีพื้นหลังของกล่องข้อความ */
 }
+
 .api-post-box-id {
-  text-align: left;
+  text-align: left; /* จัดข้อความให้อยู่ชิดซ้าย */
 }
 
 .Type-Name button {
-  margin: 10px 0;
+  margin: 10px 0; /* ตั้ง margin ด้านบนและล่าง */
 }
 
 footer {
-  display: flex;
-  justify-content: space-between;
-  background-color: #757474;
-  height: 50px;
-  align-items: center;
+  display: flex; /* จัด layout เป็น flexbox */
+  justify-content: space-between; /* จัด content กระจายซ้าย-ขวา */
+  background-color: #757474; /* ตั้งสีพื้นหลัง */
+  height: 50px; /* กำหนดความสูง */
+  align-items: center; /* จัด content ให้อยู่กลางแนวตั้ง */
   justify-content: center;
   text-align: center;
   padding: 0 5rem;
